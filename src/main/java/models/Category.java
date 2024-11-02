@@ -9,16 +9,6 @@ public class Category {
     
 
     // Constructors
-    public Category(long l) {}
-
-    public Category(String name) {
-        this.name = name;
-    }
-
-    public Category(long long1, String string) {
-		// TODO Auto-generated constructor stub
-	}
-
 	public Category() {
 		// TODO Auto-generated constructor stub
 	}

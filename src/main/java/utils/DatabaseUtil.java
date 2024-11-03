@@ -1,16 +1,30 @@
 package utils;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
+
 public class DatabaseUtil {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/yourdatabase";
-    private static final String USER = "yourusername";
-    private static final String PASSWORD = "yourpassword";
+    private static Connection connexion;
 
-    public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+    
+    static {
+    	try {
+    		Class.forName("com.mysql.cj.jdbc.Driver");
+    		connexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/catalogue", "root", "123456"); 
+    	}catch (SQLException ex) {
+            System.err.println("Server/DB Not found or Incorrect Request");
+        } catch (ClassNotFoundException e) {
+        	 System.err.println("Driver Not found or Incorrect Request");
+			e.printStackTrace();
+		}
+    }
+    public static  Connection getConnection() { 
+    	System.out.println("Attempting to connect to the database...");
+    	return connexion; 
     }
 }

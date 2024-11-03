@@ -58,10 +58,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>E-Commerce </h1>
-        <a href="CategoryAction.do" class="link-button">Category Action</a>
-        <a href="category.jsp" class="link-button">Manage Categories</a>
-        <a href="product.jsp" class="link-button">Manage Products</a>
+        <h1> ERROR</h1>
+        <a href="Category.jsp" class="link-button">ERROR</a>
     </div>
 </body>
 </html>

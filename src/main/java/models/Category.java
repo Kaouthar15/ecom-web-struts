@@ -14,11 +14,14 @@ public class Category {
 	}
 
 	public Category(String name2, String description2) {
-		// TODO Auto-generated constructor stub
+		this.name = name2;
+        this.description = description2;
 	}
 
 	public Category(long long1, String string, String string2) {
-		// TODO Auto-generated constructor stub
+		this.id = long1;
+        this.name = string;
+        this.description = string2;
 	}
 
 	// Getters and Setters

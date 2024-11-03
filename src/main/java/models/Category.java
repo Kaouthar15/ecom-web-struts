@@ -13,6 +13,14 @@ public class Category {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Category(String name2, String description2) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Category(long long1, String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	// Getters and Setters
     public Long getId() {
         return id;

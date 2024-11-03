@@ -11,7 +11,15 @@ public class Product {
     // Default constructor
     public Product() {}
 
-    // Getters and Setters
+    public Product(long long1, String string, double double1, String string2, long long2) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Product(String name2, double price2, String photo2, Long categoryId) {
+		// TODO Auto-generated constructor stub
+	}
+
+	// Getters and Setters
     public Long getId() {
         return id;
     }
@@ -51,5 +59,10 @@ public class Product {
     public void setCategory(Category category) {
         this.category = category;
     }
+
+	public long getCategoryId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

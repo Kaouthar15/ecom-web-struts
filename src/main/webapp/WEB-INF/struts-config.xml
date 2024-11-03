@@ -1,10 +1,7 @@
-<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
-    "http://struts.apache.org/dtds/struts-config_1_2.dtd">
-
 <struts-config>
-    <form-beans>
-        <!-- Define form beans if needed -->
-    </form-beans>
+<!--     <form-beans> -->
+<!--         Define form beans if needed -->
+<!--     </form-beans> -->
 
     <action-mappings>
         <action path="/CategoryAction" 
@@ -20,5 +17,5 @@
         </action>
     </action-mappings>
 
-    <message-resources parameter="com.yourpackage.ApplicationResources" />
+<!--     <message-resources parameter="ApplicationResources" /> -->
 </struts-config>

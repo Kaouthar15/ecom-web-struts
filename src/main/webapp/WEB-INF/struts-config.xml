@@ -1,0 +1,24 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+    "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <form-beans>
+        <!-- Define form beans if needed -->
+    </form-beans>
+
+    <action-mappings>
+        <action path="/CategoryAction" 
+                type="controllers.CategoryAction" 
+                scope="request">
+            <forward name="category" path="/category.jsp" />
+        </action>
+
+        <action path="/ProductAction" 
+                type="controllers.ProductAction" 
+                scope="request">
+            <forward name="product" path="/product.jsp" />
+        </action>
+    </action-mappings>
+
+    <message-resources parameter="com.yourpackage.ApplicationResources" />
+</struts-config>

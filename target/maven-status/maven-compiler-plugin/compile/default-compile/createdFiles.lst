@@ -1,0 +1,5 @@
+utils\DatabaseUtil.class
+models\Category.class
+services\CategoryService.class
+controllers\CategoryAction.class
+repositories\CategoryRepository.class

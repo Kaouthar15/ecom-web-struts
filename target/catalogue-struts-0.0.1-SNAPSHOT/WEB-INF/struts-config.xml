@@ -1,0 +1,16 @@
+<struts-config>
+    <action-mappings>
+        <action path="/CategoryAction"
+            type="controllers.CategoryAction"
+            name="categoryForm"
+            scope="request"
+            input="/category.jsp">
+            <forward name="category" path="/category.jsp" />
+        </action>
+        <action path="/ProductAction"
+            type="controllers.ProductAction"
+            scope="request">
+            <forward name="product" path="/product.jsp" />
+        </action>
+    </action-mappings>
+</struts-config>
